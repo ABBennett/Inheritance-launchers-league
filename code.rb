@@ -44,9 +44,11 @@ module Super_hero
   attr_reader :secret_identity
 end
 
+
 class SuperHero
   include Super_hero
 end
+
 
 class Speedster
   include Super_hero
@@ -55,6 +57,7 @@ class Speedster
   end
 end
 
+
 class Brawler
   include Super_hero
   def health
@@ -62,16 +65,19 @@ class Brawler
   end
 end
 
+
 class Detective
   include Super_hero
-def weakness
-  secret_identity
+
+  def weakness
+    secret_identity
+  end
+
+  def speed_in_mph
+    10
+  end
 end
 
-def speed_in_mph
-  10
-end
-end
 
 class Demigod
   include Super_hero
@@ -79,6 +85,7 @@ class Demigod
     "Cosmic Plane"
   end
 end
+
 
 class JackOfAllTrades
   include Super_hero
@@ -94,6 +101,7 @@ class JackOfAllTrades
     true
   end
 end
+
 
 class WaterBased
   include Super_hero
